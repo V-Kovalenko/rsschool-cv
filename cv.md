@@ -1,5 +1,4 @@
 # Vladimir Kovalenko
-
 ### Contacts
 
 * Mobile: +7-951-174-24-44
