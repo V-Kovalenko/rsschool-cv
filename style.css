@@ -146,6 +146,9 @@ a:visited {
     margin-bottom: 20px;
     border: 2px solid #3b59a2
 }
+.wrapper {
+
+}
 /********* MAIN *************/
 
 .main {
@@ -159,7 +162,7 @@ a:visited {
 /**************HEADER*************/
 .header {
     grid-area: h;
-    background-color: #9945ee;
+    background-color: #ae98b4;
     padding: 10px;
     font-size: 20px;
     line-height: 28px;
@@ -197,17 +200,29 @@ a:visited {
 
 .main_left {
     padding: 10px;
-    margin: 0 10px 0 0;
+    margin: 10px;
     grid-area: l;
-    background-color: aqua;
+    background-color: #d7d667;
+    display: flex;
+    flex-direction: column;
+
 
 }
+.main_img {
+    max-width: 300px;
+    border-radius: 100%;
+}
+h1 {
+    color: blueviolet;
+    font-size: 30px;
 
+}
 
 /************* MAIN_RIGHT ********/
 
 .main_right {
     padding: 10px;
+    margin: 10px;
     grid-area: r;
     background-color: #cbb678;
     font-size: 18px;
@@ -228,10 +243,13 @@ a:visited {
     padding: 10px;
     margin-bottom: 20px;
 }
-.main_right-ul {
+
+
+/******* CODE **********/
+.main_right-code {
 
 }
-/******* cod **********/
+/***** EXPERIENCE ********/
 
 
 /********* FOOTER **********/

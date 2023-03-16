@@ -6,119 +6,122 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="body">
-    <header class="header">
-        <nav class="header_nav">
-            <ul class="header_ul">
-                <li class="header_li" >
-                    <a href="#about">About me</a>
-                </li>
-                <li class="header_li">
-                    Skills
-                </li>
-                <li class="header_li">
-                    Code example
-                </li>
-                <li class="header_li">
-                    Work experience
-                </li>
-                <li class="header_li">
-                    Education
-                </li>
-                <li class="header_li">
-                    Language
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="main_left">
-            <section class="main_left-profile" id="profile">
-                <div>Photo</div>
-                <h1 class="main_left-name">Vladimir Kovalenko</h1>
-            </section>
-
-            <section class="main_left-skills" id="skills">
-                <ul class="main-left-ul">
-                    <li class="main_left-li">
-                        HTML&CSS
-                    </li>
-                    <li class="main_left-li">
-                        JS
-                    </li>
-                    <li class="main_left-li">
-                        GIT
-                    </li>
-                    <li class="main_left-li">
-                        React
-                    </li>
-                </ul>
-            </section>
-
-            <section class="main_left-contacts" id="contacts">
-                <ul class="main_left-ul">
-                    <li class="main_left-li">
-                        Mobile: +7-951-174-24-44
-                    </li>
-                    <li class="main_left-li">
-                        E-mail: gorsetis@yandex.ru
-                    </li>
-                    <li class="main_left-li">
-                        Discord: Vladimir#0992
-                    </li>
-                </ul>
-            </section>
-        </div>
-<!--            main_right  -->
-        <div class="main_right">
-            <section class="main_right-about" id="about">
-                <h2>About me</h2>
-                <p class="main_right-p">I really want to be a frontend developer!!! I hope that RSSchool will help me with this!</p>
-            </section>
-
-            <section class="main_right-eduction" id="education">
-                <h2>Education</h2>
-                <ul class="main_right-ul">
-                    <li class="main-right-li">
-                        Tomsk Polytechnic University
-                    </li>
-                    <li class="main-right-li">
-                        courses: JS, CSS, HTML, Git, React - on YouTube
-                    </li>
-                </ul>
-            </section>
-
-            <section class="main_right-code" id="code">
-                <h2>Code</h2>
-                <p>
-                    Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
-                </p>
-                <p>
-                    const repeatStr = (n, s) => s.repeat(n)
-                </p>
-            </section>
-
-            <section class="main_right-experience" id="experience">
-                <p>
-                    No experience
-                </p>
-            </section>
-            <section class="main_right-languages" id="languages">
-                English - Beginner
-            </section>
-        </div>
-    </main>
-    <footer class="footer">
-        <ul class="footer_ul">
-            <li class="footer_li">
-                githab
+<header class="header">
+    <nav class="header_nav">
+        <ul class="header_ul">
+            <li class="header_li">
+                <a href="#about">About me</a>
             </li>
-            <li class="footer_li">
-                2023
+            <li class="header_li">
+                Skills
             </li>
-            <li class="footer_li">
-                <a href="https://rs.school/js/" target="_blank">hjjj</a>
+            <li class="header_li">
+                Code example
+            </li>
+            <li class="header_li">
+                Work experience
+            </li>
+            <li class="header_li">
+                Education
+            </li>
+            <li class="header_li">
+                Language
             </li>
         </ul>
-    </footer>
+    </nav>
+</header>
+<main class="main wrapper">
+    <div class="main_left">
+        <section class="main_left-profile" id="profile">
+            <img class='main_img' src="./assets/img/MyPhoto.jpg" alt="image">
+            <h1 class="main_left-name">Vladimir Kovalenko</h1>
+        </section>
+
+        <section class="main_left-skills" id="skills">
+            <ul class="main-left-ul">
+                <li class="main_left-li">
+                    HTML&CSS
+                </li>
+                <li class="main_left-li">
+                    JS
+                </li>
+                <li class="main_left-li">
+                    GIT
+                </li>
+                <li class="main_left-li">
+                    React
+                </li>
+            </ul>
+        </section>
+
+        <section class="main_left-contacts" id="contacts">
+            <ul class="main_left-ul">
+                <li class="main_left-li">
+                    Mobile: +7-951-174-24-44
+                </li>
+                <li class="main_left-li">
+                    E-mail: gorsetis@yandex.ru
+                </li>
+                <li class="main_left-li">
+                    Discord: Vladimir#0992
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!--            main_right  -->
+    <div class="main_right">
+        <section class="main_right-about" id="about">
+            <h2>About me</h2>
+            <p class="main_right-p">I really want to be a frontend developer!!! I hope that RSSchool will help me with
+                this!</p>
+        </section>
+
+        <section class="main_right-eduction" id="education">
+            <h2>Education</h2>
+            <ul class="main_right-ul">
+                <li class="main-right-li">
+                    Tomsk Polytechnic University
+                </li>
+                <li class="main-right-li">
+                    courses: JS, CSS, HTML, Git, React - on YouTube
+                </li>
+            </ul>
+        </section>
+
+        <section class="main_right-code container" id="code">
+            <h2>Code</h2>
+            <p>
+                Write a function that accepts an integer n and a string s as parameters, and returns a string of s
+                repeated exactly n times.
+            </p>
+            <p>
+                const repeatStr = (n, s) => s.repeat(n)
+            </p>
+        </section>
+
+        <section class="main_right-experience container" id="experience">
+            <h2>Experience</h2>
+            <p>
+                No experience
+            </p>
+        </section>
+        <section class="main_right-languages container" id="languages">
+            English - Beginner
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <ul class="footer_ul">
+        <li class="footer_li">
+            githab
+        </li>
+        <li class="footer_li">
+            2023
+        </li>
+        <li class="footer_li">
+            <a href="https://rs.school/js/" target="_blank">hjjj</a>
+        </li>
+    </ul>
+</footer>
 </body>
 </html>
