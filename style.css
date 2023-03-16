@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+label,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+label {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    margin: 0 !important;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select,
+pre {
+    font: inherit;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+    background: transparent;
+
+}
+
+button:focus,
+button:active,
+button {
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a:visited {
+    text-decoration: none;
+    color: unset;
+}
+
+/*************/
+.body {
+    display: grid;
+    background-color: #d29850;
+    min-height: 100vh;
+    box-sizing: border-box;
+    grid-template-areas:
+    'h h '
+    'm m'
+    'f f '
+;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content 10fr min-content;
+
+}
+.container {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #a23b3b
+}
+.wrapper {
+
+}
+/********* MAIN *************/
+
+.main {
+    display: grid;
+    grid-area: m;
+    grid-template-columns: max-content  1fr;
+    grid-template-areas:
+    'l r'
+;
+}
+/**************HEADER*************/
+.header {
+    grid-area: h;
+    background-color: #cb9b52;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 5px;;
+    border: 1px solid black;
+}
+.header_nav {
+
+}
+.header_ul {
+    display: flex;
+    justify-content: space-between;
+}
+.header_li {
+    position: relative;
+    cursor: pointer;
+}
+.header_li:hover {
+    color: gold;
+}
+.header_li::before{
+    position: absolute;
+    top: 24px;
+    content: '';
+    width: 0;
+    border-bottom: 3px solid #ffff00;
+    transition: 0.15s;
+}
+.header_li:hover::before {
+    width: 100%;
+}
+
+
+/************* MAIN_LEFT***********/
+
+.main_left {
+    padding: 10px;
+    margin: 10px;
+    grid-area: l;
+    background-color: #b77420;
+    display: flex;
+    flex-direction: column;
+}
+.main_left-h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main_left-img {
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 20px;
+}
+/*** profile*****/
+.main_left-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_img {
+    max-width: 300px;
+    border-radius: 100%;
+}
+h1 {
+    color: #1e1c1c;
+    font-size: 30px;
+    margin: 20px 0 40px 0;
+
+}
+/***** skills ******/
+.main_left-skills {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*!*align-items: center;*!*/
+}
+.main_left-li {
+    margin-left: 20px;
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    justify-content: start  ;
+}
+/************* MAIN_RIGHT ********/
+
+.main_right {
+    padding: 10px;
+    margin: 10px;
+    grid-area: r;
+    background-color: #cbb678;
+    font-size: 18px;
+}
+/******* ABOUT ********/
+.main_right-about{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.main_right-p {
+    margin: 10px;
+}
+/******** EDUCATION ********/
+.main_right-eduction {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+/******* CODE **********/
+.main_right-code {
+
+}
+/***** EXPERIENCE ********/
+
+
+/********* FOOTER **********/
+
+.footer {
+    margin-top: 10px;
+    grid-area: f;
+    background-color: #c5a518;
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
+}
+
+
+.footer_img {
+    max-width: 70px;
+    transition: .3s;
+}
+.footer_img:hover {
+    transform: scale(1.2);
+}
