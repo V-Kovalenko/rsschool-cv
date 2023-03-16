@@ -129,7 +129,7 @@ a:visited {
 /*************/
 .body {
     display: grid;
-    background-color: gray;
+    background-color: #d29850;
     min-height: 100vh;
     box-sizing: border-box;
     grid-template-areas:
@@ -144,7 +144,7 @@ a:visited {
 .container {
     padding: 10px;
     margin-bottom: 20px;
-    border: 2px solid #3b59a2
+    border: 2px solid #a23b3b
 }
 .wrapper {
 
@@ -162,7 +162,7 @@ a:visited {
 /**************HEADER*************/
 .header {
     grid-area: h;
-    background-color: #ae98b4;
+    background-color: #cb9b52;
     padding: 10px;
     font-size: 20px;
     line-height: 28px;
@@ -202,22 +202,49 @@ a:visited {
     padding: 10px;
     margin: 10px;
     grid-area: l;
-    background-color: #d7d667;
+    background-color: #b77420;
     display: flex;
     flex-direction: column;
-
-
+}
+.main_left-h2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.main_left-img {
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 20px;
+}
+/*** profile*****/
+.main_left-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .main_img {
     max-width: 300px;
     border-radius: 100%;
 }
 h1 {
-    color: blueviolet;
+    color: #1e1c1c;
     font-size: 30px;
+    margin: 20px 0 40px 0;
 
 }
-
+/***** skills ******/
+.main_left-skills {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*!*align-items: center;*!*/
+}
+.main_left-li {
+    margin-left: 20px;
+    display: flex;
+    padding: 10px;
+    font-size: 18px;
+    justify-content: start  ;
+}
 /************* MAIN_RIGHT ********/
 
 .main_right {
@@ -230,7 +257,6 @@ h1 {
 /******* ABOUT ********/
 .main_right-about{
     padding: 10px;
-    border: 2px solid #3b59a2;
     margin-bottom: 20px;
 }
 
@@ -239,7 +265,6 @@ h1 {
 }
 /******** EDUCATION ********/
 .main_right-eduction {
-    border: 2px solid #3b59a2;
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -257,12 +282,20 @@ h1 {
 .footer {
     margin-top: 10px;
     grid-area: f;
-
-    background-color: green;
+    background-color: #c5a518;
+    min-height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    font-size: 24px;
 }
 
-.footer_ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
+
+.footer_img {
+    max-width: 70px;
+    transition: .3s;
+}
+.footer_img:hover {
+    transform: scale(1.2);
 }
