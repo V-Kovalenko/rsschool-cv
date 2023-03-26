@@ -1,0 +1,9 @@
+@mixin fontFamilySizeHeightWeightColor ($family, $size, $weight, $line, $letter, $color) {
+  font-size: $size;
+  font-family: $family;
+  font-weight: $weight;
+  line-height: $line;
+  letter-spacing: $letter;
+  color: $color;
+}
+
