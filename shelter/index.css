@@ -21,6 +21,11 @@ dd {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -56,6 +61,7 @@ dd {
   margin-bottom: 10px;
 }
 .header__subtitle {
+  margin-bottom: 253px;
   font-size: 13px;
   font-family: Arial;
   font-weight: 400;
@@ -65,7 +71,6 @@ dd {
 }
 .header .nav {
   display: flex;
-  align-items: center;
   grid-column-gap: 35px;
 }
 .header .nav__link {
@@ -73,12 +78,70 @@ dd {
   font-family: Arial;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: #F1CDB3;
 }
 
 /******* HEADER END*/
 /******* SECTION PUPPY START*/
+.puppy {
+  position: relative;
+}
+.puppy__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 460px;
+  margin-right: 42px;
+}
+.puppy__header {
+  max-width: 310px;
+  margin-bottom: 42px;
+  font-size: 44px;
+  font-family: Georgia;
+  font-weight: 400;
+  line-height: 57.2px;
+  letter-spacing: 0;
+  color: #FFFFFF;
+}
+.puppy__subheading {
+  margin-bottom: 42px;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #CDCDCD;
+}
+.puppy__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 207px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: #F1CDB3;
+  font-size: 26px;
+}
+.puppy__p {
+  padding: 15px 45px 15px 45px;
+  font-size: 17px;
+  font-family: Georgia;
+  font-weight: 400;
+  line-height: 22.1px;
+  letter-spacing: 6%;
+  color: #292929;
+}
+.puppy__img {
+  position: absolute;
+  max-width: 698px;
+  max-height: 728px;
+  top: -163px;
+  left: calc(50% - 349px + 251px);
+  bottom: 0;
+}
+
 /******* SECTION PUPPY END*/
 
 /*# sourceMappingURL=index.css.map */
