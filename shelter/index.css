@@ -19,6 +19,11 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 img {
@@ -143,5 +148,45 @@ img {
 }
 
 /******* SECTION PUPPY END*/
+/******** SECTION ABOUT START*/
+.about {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+}
+.about__img {
+  margin-right: 120px;
+}
+.about__content {
+  max-width: 430px;
+}
+.about__header {
+  max-width: 370px;
+  font-size: 35px;
+  font-family: Georgia;
+  font-weight: 400px;
+  line-height: 45.5px;
+  letter-spacing: 6%;
+  color: #545454;
+  margin-bottom: 10px;
+}
+.about__subheading {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: Arial;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #4C4C4C;
+}
+.about__subheading p {
+  margin-bottom: 25px;
+}
+.about__subheading p:last-child {
+  margin-bottom: 0;
+}
+
+/******** SECTION ABOUT END*/
 
 /*# sourceMappingURL=index.css.map */
