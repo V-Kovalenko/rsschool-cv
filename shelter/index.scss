@@ -431,9 +431,12 @@
 
 /******** FOOTER START*/
 .footer {
-  padding: 40px 40px 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //padding: 40px 40px 0 40px;
   width: 100%;
-    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
   &__content {
     display: flex;
     justify-content: center;
