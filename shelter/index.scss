@@ -355,6 +355,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 180px;
+  margin-bottom: 100px;
   &__img {
 
   }
@@ -426,5 +427,126 @@
 
   }
 }
-
 /******** SECTION DONATION END*/
+
+/******** FOOTER START*/
+.footer {
+  padding: 40px 40px 0 40px;
+  width: 100%;
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+  }
+  &__contacts {
+
+  }
+  .contacts {
+    display: flex;
+    max-width: 270px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 45px;
+    &__header {
+      @include font(
+              $family: Georgia,
+              $size: 35px,
+              $line: 45.5px,
+              $letter: 6%,
+              $color: #FFFFFF);
+    }
+    &__mail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__img {
+      margin-right: 20px;
+    }
+    &__text-mail {
+      @include font(
+              $family: Georgia,
+              $size: 20px,
+              $line: 23px,
+              $letter: 6%,
+              $color: #F1CDB3);
+    }
+    &__phone {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__img-phone {
+      margin-right: 20px;
+    }
+    &__text-phone {
+      @include font(
+              $family: Georgia,
+              $size: 20px,
+              $line: 23px,
+              $letter: 6%,
+              $color: #F1CDB3);
+    }
+  }
+  &__location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 45px;
+  }
+  .location {
+    display: flex;
+    max-width: 278px;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    &__header {
+
+      @include font(
+              $family: Georgia,
+              $size: 35px,
+              $line: 45.5px,
+              $letter: 6%,
+              $color: #FFFFFF);
+    }
+    &__boston {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__img-boston {
+      margin-right: 20px;
+    }
+    &__text-boston {
+      @include font(
+              $family: Georgia,
+              $size: 20px,
+              $line: 23px,
+              $letter: 6%,
+              $color: #F1CDB3);
+    }
+    &__london {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__img-london {
+      margin-right: 20px;
+    }
+    &__london-text {
+      @include font(
+              $family: Georgia,
+              $size: 20px,
+              $line: 23px,
+              $letter: 6%,
+              $color: #F1CDB3);
+    }
+  }
+}
+
+
+/******** FOOTER END*/

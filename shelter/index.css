@@ -330,6 +330,7 @@ img {
   justify-content: center;
   align-items: center;
   margin-top: 180px;
+  margin-bottom: 100px;
 }
 .donation__content {
   display: flex;
@@ -390,5 +391,121 @@ img {
 }
 
 /******** SECTION DONATION END*/
+/******** FOOTER START*/
+.footer {
+  padding: 40px 40px 0 40px;
+  width: 100%;
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+}
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 160px;
+}
+.footer .contacts {
+  display: flex;
+  max-width: 270px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 45px;
+}
+.footer .contacts__header {
+  font-size: 35px;
+  font-family: Georgia;
+  font-weight: 400px;
+  line-height: 45.5px;
+  letter-spacing: 6%;
+  color: #FFFFFF;
+}
+.footer .contacts__mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .contacts__img {
+  margin-right: 20px;
+}
+.footer .contacts__text-mail {
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: 400px;
+  line-height: 23px;
+  letter-spacing: 6%;
+  color: #F1CDB3;
+}
+.footer .contacts__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .contacts__img-phone {
+  margin-right: 20px;
+}
+.footer .contacts__text-phone {
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: 400px;
+  line-height: 23px;
+  letter-spacing: 6%;
+  color: #F1CDB3;
+}
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 45px;
+}
+.footer .location {
+  display: flex;
+  max-width: 278px;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+.footer .location__header {
+  font-size: 35px;
+  font-family: Georgia;
+  font-weight: 400px;
+  line-height: 45.5px;
+  letter-spacing: 6%;
+  color: #FFFFFF;
+}
+.footer .location__boston {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .location__img-boston {
+  margin-right: 20px;
+}
+.footer .location__text-boston {
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: 400px;
+  line-height: 23px;
+  letter-spacing: 6%;
+  color: #F1CDB3;
+}
+.footer .location__london {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .location__img-london {
+  margin-right: 20px;
+}
+.footer .location__london-text {
+  font-size: 20px;
+  font-family: Georgia;
+  font-weight: 400px;
+  line-height: 23px;
+  letter-spacing: 6%;
+  color: #F1CDB3;
+}
+
+/******** FOOTER END*/
 
 /*# sourceMappingURL=index.css.map */
