@@ -237,7 +237,7 @@ img {
   right: -105px;
 }
 .friends__cards {
-  display: flex; /*!!!!*/
+  display: flex;
 }
 .friends .cards {
   margin-bottom: 60px;
